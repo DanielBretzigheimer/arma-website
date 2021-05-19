@@ -1,20 +1,10 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import Navigation from "./navigation"
 
-interface HeaderProps {
-  siteTitle: string
-}
-
-export default function Header(props: HeaderProps) {
-  const { siteTitle } = props
-
+export default function Header() {
   return (
     <header>
-      <div>
-        <h1>
-          <Link to="/">{siteTitle}</Link>
-        </h1>
-      </div>
+      <Navigation />
     </header>
   )
 }

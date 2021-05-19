@@ -1,0 +1,39 @@
+nav {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  margin: 2rem 0;
+
+  > a.nav-item {
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      background: black;
+    }
+  }
+
+  > div.logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+    > a {
+      > div {
+        margin: -15px 0;
+        width: 80px;
+        height: 80px;
+      }
+
+      &:hover {
+        filter: drop-shadow(0 0 4px rgb(255 255 255 / 20%)) brightness(1.5);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}

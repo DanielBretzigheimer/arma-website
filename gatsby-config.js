@@ -28,5 +28,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    "gatsby-plugin-scss-typescript",
   ],
 }

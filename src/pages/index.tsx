@@ -12,14 +12,6 @@ export default function IndexPage() {
     <Layout>
       <Seo title="Home" />
       <p>Hallo 👋</p>
-      <p>
-        <Link to="/contact/">Kontakt</Link>
-        <Link to="/faq/">FAQ</Link>
-        <Link to="/member/">Mitglieder</Link>
-        <Link to="/modifications/">Mods</Link>
-        <Link to="/streaming/">Twitch</Link>
-        <Link to="/teamspeak/">Teamspeak</Link>
-      </p>
     </Layout>
   )
 }

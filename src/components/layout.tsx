@@ -2,7 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import "./layout.scss"
 import Footer from "./footer"
 
 interface LayoutProps {
@@ -23,12 +23,12 @@ export default function Layout(props: LayoutProps) {
   `)
 
   return (
-    <>
+    <div id="root">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div>
+      <div id="content">
         <main>{children}</main>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
