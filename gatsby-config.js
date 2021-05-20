@@ -12,6 +12,10 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -28,6 +32,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    "gatsby-plugin-scss-typescript",
+    `gatsby-plugin-scss-typescript`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/layout.tsx"),
+        },
+      },
+    },
   ],
 }

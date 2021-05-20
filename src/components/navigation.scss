@@ -19,10 +19,11 @@ nav {
     justify-content: center;
 
     > a {
+      position: absolute;
+
       > div {
         margin: -15px 0;
         width: 80px;
-        height: 80px;
       }
 
       &:hover {
